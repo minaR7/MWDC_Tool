@@ -10,9 +10,11 @@ function Navbar() {
 
   const navLinks = [
     { text: 'Mission', icon: <BsGridFill />, path: '/mission' },
+    { text: 'Map', icon: <FaUsers />, path: '/map' },
+    { text: 'Mine Laying', icon: <FaUsers />, path: '/mine-laying' },
     { text: 'Assets', icon: <HiAdjustments />, path: '/assets' },
     { text: 'Environment', icon: <FaTruck />, path: '/environment' },
-    { text: 'Data Explorer', icon: <FaPaperPlane />, path: '/data-explorer' },
+    { text: 'Task Order', icon: <FaPaperPlane />, path: '/data-explorer' },
     { text: 'Intelligence', icon: <FaUsers />, path: '/intelligence' },
   ];
 

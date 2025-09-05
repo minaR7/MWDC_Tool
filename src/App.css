@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* Change the white vertex markers while drawing */
+.leaflet-draw-draw-marker,
+.leaflet-draw-edit-marker {
+  background-color: #ff0000 !important; /* red background */
+  border: 2px solid #000 !important;   /* black border */
+  width: 12px !important;             /* bigger size */
+  height: 12px !important;
+  border-radius: 50% !important;      /* make them circles */
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
