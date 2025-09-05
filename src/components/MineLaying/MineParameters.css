@@ -1,0 +1,149 @@
+.mine-parameters {
+  display: flex;
+  padding: 12px 16px 13px 16px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.parameters-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.parameters-title {
+  color: #162E45;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+}
+
+.parameter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.parameter-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #374151;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  height: 20px;
+}
+
+.parameter-select {
+  display: flex;
+  height: 40px;
+  padding: 9px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  background: #F9FAFB;
+  color: #000;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.parameter-input-with-unit {
+  display: flex;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  overflow: hidden;
+}
+
+.parameter-input {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  background: transparent;
+  color: #000;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.parameter-input:focus {
+  outline: none;
+}
+
+.parameter-unit {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  background: transparent;
+  color: #000;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.drawing-mode-buttons {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.drawing-mode-btn {
+  display: flex;
+  height: 43px;
+  padding: 11px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  cursor: pointer;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.drawing-mode-btn.inactive {
+  background: #E0E3E5;
+  color: #1C3D5A;
+}
+
+.drawing-mode-btn.active {
+  background: #1C3D5A;
+  color: #FFF;
+}
+
+.generate-mines-btn {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 9px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: #1C3D5A;
+  border: none;
+  color: #FFF;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.generate-mines-btn:hover {
+  background: #162E45;
+}

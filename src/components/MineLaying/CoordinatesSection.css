@@ -1,0 +1,144 @@
+.coordinates-section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.coordinates-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.coordinates-title {
+  color: #1C3D5A;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+}
+
+.coordinates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.coordinate-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 41px;
+}
+
+.coordinate-number {
+  display: flex;
+  width: 19px;
+  justify-content: center;
+  align-items: center;
+  color: #6B7280;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.coordinate-input {
+  display: flex;
+  width: 100%;
+  height: 41px;
+  padding: 9px;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  background: transparent;
+  color: #000;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.coordinate-input:focus {
+  outline: none;
+  border-color: #0075FF;
+}
+
+.delete-coordinate-btn {
+  display: flex;
+  width: 40px;
+  height: 41px;
+  padding: 9px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  background: transparent;
+  cursor: pointer;
+}
+
+.delete-coordinate-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.delete-coordinate-btn:hover {
+  background: #FEF2F2;
+  border-color: #EF4444;
+}
+
+.coordinates-actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.add-points-btn {
+  display: flex;
+  width: 220px;
+  height: 40px;
+  padding: 9px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: #1C3D5A;
+  border: none;
+  color: #FFF;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.add-points-btn:hover {
+  background: #162E45;
+}
+
+.clear-all-btn {
+  display: flex;
+  width: 220px;
+  height: 40px;
+  padding: 9px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: #E95440;
+  border: none;
+  color: #FFF;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.clear-all-btn:hover {
+  background: #DC2626;
+}
+
+.clear-all-btn svg {
+  width: 16px;
+  height: 16px;
+}
