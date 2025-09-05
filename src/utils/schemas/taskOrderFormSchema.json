@@ -1,0 +1,93 @@
+{
+  "title": "Order Form",
+  "sections": [
+     {
+      "id": "units",
+      "label": "Units",
+      "superfield":         {
+          "name": "ships",
+          "label": "Ships",
+          "type": "select",
+          "options": ["Ship1", "Ship2", "Ship3"],
+          "multiSelect": false
+        },
+      "fields": [
+        { "name": "discretion", "label": "Discretion", "type": "boolean" },
+        {
+          "name": "callSign",
+          "label": "Call Sign",
+           "type": "text" 
+        },
+        { "name": "numberOfUnits", "label": "Number of Units", "type": "number" }
+      ],
+      "fieldtype" : "default"
+    },
+    {
+      "id": "timeToCommence",
+      "label": "Time to Commence",
+      "fields": [
+        { "name": "immediately", "label": "Immediately", "type": "boolean" },
+        { "name": "uponCompletionofpresenttask", "label": "Upon Completion of present task", "type": "boolean" },
+        { "name": "uponCompletionofofftaskperiod", "label": "Upon Completion of off-task period", "type": "boolean" },
+        { "name": "dtg", "label": "DTG", "type": "datetime" },
+        { "name": "completepriortoconvoypassage", "label": "Complete prior to passage of convoy", "type": "boolean" },
+        { "name": "uponCompletionofrepairs", "label": "Upon Completion of repairs", "type": "boolean" },
+        { "name": "tobemessaged", "label": "To be messaged", "type": "boolean" },
+        { "name": "assoonasweatherpermits", "label": "As soon as weather permits", "type": "boolean" }
+      ],
+      "fieldtype" : "default"
+    },
+    {
+      "id": "areaOrChannel",
+      "label": "Area or Channel",
+      "fields": [
+        { "name": "routeNumber", "label": "Route Number", "type": "number" },
+        { "name": "channelNumber", "label": "Channel Number", "type": "number" },
+        { "name": "anchorageName", "label": "Anchorage Name", "type": "text" },
+        {
+          "name": "betweenPoints",
+          "label": "Between Points",
+          "type": "coordinates",
+          "multiple": true
+        },
+        { "name": "positionWithin3milesofposition", "label": "Within 3 miles position", "type": "text" },
+        { "name": "within3MilesJunctionOnRoutes", "label": "Within 3 miles junction", "type": "text" },
+        { "name": "habrourName", "label": "Harbour Name", "type": "text" }
+      ],
+      "fieldtype" : "multiple"
+    },
+    {
+      "id": "typeofmcmoperation",
+      "label": "Type of MCM operation",
+      "fields": [
+       { "name": "stagenumber", "label": "Stage number", "type": "number" },
+       {
+          "name": "digitcodegroup",
+          "label": "Digit code group from appropriate OPORD",
+          "type": "select",
+          "options": ["Alpha", "Bravo", "Charlie", "Delta"],
+          "multiSelect": false
+        },
+        { "name": "danlaying", "label": "Danlaying", "type": "boolean" },
+        { "name": "minerecovery", "label": "Mine recovery", "type": "boolean" }
+      ],
+      "fieldtype" : "default"
+    },
+    {
+      "id": "encounteredminetype",
+      "label": "Mine type that may be encountered",
+      "fields": [
+       { "name": "minetypename", "label": "Mine type", "type": "text" },
+       {
+          "name": "asindicatedinopord",
+          "label": "As indicated in OPORD",
+          "type": "select",
+          "options": ["Moored", "Surface", "Contact"],
+          "multiSelect": false
+        },
+        { "name": "nointelligenceavailable", "label": "No intelligence available", "type": "boolean" }
+      ],
+      "fieldtype" : "multiple"
+    }
+  ]
+}
