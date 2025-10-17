@@ -1,0 +1,30 @@
+/* Base vertex handles while drawing & editing */
+.leaflet-div-icon.leaflet-editing-icon {
+  background: #ff2d55 !important;
+  border: 2px solid #111 !important;
+  width: 14px !important;
+  height: 14px !important;
+  margin-left: -7px !important;  /* center the icon */
+  margin-top: -7px !important;
+  border-radius: 50% !important; /* make them circles instead of squares */
+  box-shadow: 0 0 5px rgba(0,0,0,.35) !important;
+}
+
+/* On touch, Leaflet adds this class; size is larger */
+.leaflet-div-icon.leaflet-editing-icon.leaflet-touch-icon {
+  width: 12px !important;
+  height: 12px !important;
+  margin-left: -11px !important;
+  margin-top: -11px !important;
+}
+
+/* “Middle” handles (between vertices) */
+.leaflet-div-icon.leaflet-middle-icon {
+  background: #17a2b8 !important;
+  border: 2px solid #fff !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin-left: -6px !important;
+  margin-top: -6px !important;
+  border-radius: 4px !important;
+}

@@ -1,24 +1,25 @@
 import React from 'react';
+import LeafletDraw from '@/components/SimpleMap';
 
 const reports = [
-  {
-    id: 1,
-    title: 'Threat Analysis - Region A',
-    level: 'High',
-    summary: 'Multiple unauthorized drone detections in Region A airspace.',
-  },
-  {
-    id: 2,
-    title: 'Communication Breach - Sector 7',
-    level: 'Medium',
-    summary: 'Suspicious signal interference detected in secure channels.',
-  },
-  {
-    id: 3,
-    title: 'Environmental Data Leak',
-    level: 'Low',
-    summary: 'Unusual public access pattern observed for restricted data.',
-  },
+  // {
+  //   id: 1,
+  //   title: 'Threat Analysis - Region A',
+  //   level: 'High',
+  //   summary: 'Multiple unauthorized drone detections in Region A airspace.',
+  // },
+  // {
+  //   id: 2,
+  //   title: 'Communication Breach - Sector 7',
+  //   level: 'Medium',
+  //   summary: 'Suspicious signal interference detected in secure channels.',
+  // },
+  // {
+  //   id: 3,
+  //   title: 'Environmental Data Leak',
+  //   level: 'Low',
+  //   summary: 'Unusual public access pattern observed for restricted data.',
+  // },
 ];
 
 function Intelligence() {
@@ -48,6 +49,7 @@ function Intelligence() {
           </div>
         ))}
       </div>
+       <LeafletDraw />
     </div>
   );
 }
